@@ -1,5 +1,39 @@
+import setaCima from '../../assets/setaCima.svg';
+import setaBaixo from '../../assets/setaBaixo.svg';
+import cifrao from '../../assets/cifrao.svg';
+
+import { Container } from './styles';
+
 export function Summary() {
     return (
-        <h1>Summary</h1>
+        <Container>
+            <div>
+                <header>
+                    <p>Entradas</p>
+                    <img src={setaCima}
+                        width="20px" height="20px"
+                        alt="Entradas" />
+                </header>
+                <strong>R$1000,00</strong>
+            </div>
+            <div>
+                <header>
+                    <p>Saídas</p>
+                    <img src={setaBaixo}
+                        width="20px" height="20px"
+                        alt="Saídas" />
+                </header>
+                <strong>- R$500,00</strong>
+            </div>
+            <div className="highlight-background">
+                <header>
+                    <p>Total</p>
+                    <img src={cifrao}
+                        width="20px" height="20px"
+                        alt="Total" />
+                </header>
+                <strong>R$500,00</strong>
+            </div>
+        </Container>
     )
 }
