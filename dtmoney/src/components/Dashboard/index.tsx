@@ -6,7 +6,6 @@ import { TransactionsTable } from "../TransactionsTable";
 export function Dashboard() {
     return (
         <Container>
-            <h1> ola</h1>
             <Summary />
             <TransactionsTable />
         </Container>

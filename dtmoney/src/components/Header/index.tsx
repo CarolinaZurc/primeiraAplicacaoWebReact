@@ -11,7 +11,9 @@ export function Header({ onOpenNewTransactionModal }: HeaderProps) {
         <>
             <Container>
                 <Content>
-                    <img src={logoImg} width="40px" height="40px"
+                    <img src={logoImg} 
+                    width="40px" 
+                    height="40px"
                     alt="dt money"
                     />
                     <h1 className="titulo">dt money</h1>

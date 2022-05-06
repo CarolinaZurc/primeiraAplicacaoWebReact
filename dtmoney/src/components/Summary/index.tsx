@@ -1,15 +1,21 @@
+import React, { useContext } from 'react';
 import setaCima from '../../assets/setaCima.svg';
 import setaBaixo from '../../assets/setaBaixo.svg';
 import cifrao from '../../assets/cifrao.svg';
 
 import { Container } from './styles';
+import { TransactionsContext } from '../../TransactionsContext';
 
 export function Summary() {
+    const { transactions } = useContext(TransactionsContext);
+
+    console.log(transactions)
+
     return (
         <Container>
             <div>
                 <header>
-                    <p>Entradas</p>
+                    <p>Entradas</p> 
                     <img src={setaCima}
                         width="20px" height="20px"
                         alt="Entradas" />
@@ -34,6 +40,6 @@ export function Summary() {
                 </header>
                 <strong>R$500,00</strong>
             </div>
-        </Container>
+        </Container >
     )
 }
